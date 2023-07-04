@@ -7,6 +7,9 @@ ML_CI_CD_ENV/
 .ML_CI_CD_ENV
 ML_CI_CD_ENV.bak/
 
+.datafolder
+datafolder/
+
 .DS_Store
 
 # C extensions
