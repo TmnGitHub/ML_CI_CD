@@ -6,6 +6,8 @@ import pandas as pd
 
 from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
+from src.components.data_transformation import DataTransformation
+from src.components.data_transformation import DataTransformationConfig
 
 @dataclass
 class DataIngestionConfig:
@@ -18,6 +20,27 @@ class DataIngestionConfig:
 
 
 class DataIngestion:
+
+    """ 
+    Description:
+    This class is responsible for initiating the data ingestion process. 
+    It reads data from a specified source, performs preprocessing steps, and splits the data into training and testing sets. 
+    The processed data is then saved in the respective locations specified in the ingestion configuration.
+
+    Parameters:
+    None
+
+    Returns:
+    A tuple containing the paths to the training and testing data files.
+
+    Exceptions:
+    If any error occurs during the data ingestion process, a CustomException is raised with the corresponding error message and the sys module.
+
+    Example Usage:
+    data_ingestion = DataIngestion()
+    train_data_path, test_data_path = data_ingestion.initiate_data_ingestion()
+
+    """
     def __init__(self):
         self.ingestion_config =  DataIngestionConfig() #Composition: class Composite can contain an object of another class Component
 
@@ -55,4 +78,7 @@ class DataIngestion:
 
 if __name__ == "__main__":
     obj=DataIngestion()
-    obj.initiate_data_ingestion()
+    train_data_path,test_data_path = obj.initiate_data_ingestion()
+
+    data_transformation = DataTransformation()
+    data_transformation.initate_data_transformation(train_data_path,test_data_path )
