@@ -2,6 +2,12 @@
 __pycache__/
 *.py[cod]
 *$py.class
+#igone my env file
+ML_CI_CD_ENV/
+.ML_CI_CD_ENV
+ML_CI_CD_ENV.bak/
+
+.DS_Store
 
 # C extensions
 *.so
