@@ -42,11 +42,11 @@ def predict_datapoint():
 
 if __name__ == "__main__":
 
+    #To run in cloud
+    app.run(host="0.0.0.0", port=8000)
+
     #to run locally 
     #app.run(host="0.0.0.0",debug=True)
     #run app.py
     # in the browser write 127.0.0.1:5000 
     # in the browser write 127.0.0.1:5000/predictdata
-
-    #To run in cloud
-    app.run(host="0.0.0.0")
