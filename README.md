@@ -2,6 +2,18 @@
 
 Machine Learning Project for Continuous Development and Continuous Deployment (CI/CD)
 
+## Table of Contents
+
+- [Description](#description)
+- [Features](#features)
+- [Deployment](#deployment)
+    - [Phase 1: AWS Elastic Beanstalk and Azure](#phase-1-aws-elastic-beanstalk-and-azure)
+    - [Phase 2: Docker](#phase-2-docker)
+- [Getting Started](#getting-started)
+- [Contribution](#contribution)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
+
 ## Description
 
 This project is focused on developing a machine learning model for continuous development and continuous deployment (CI/CD). The objective is to build and deploy a pipeline that incorporates various algorithms such as LinearRegression, Ridge, Lasso, KNeighborsRegressor, DecisionTreeRegressor, and XGBRegressor. The scikit-learn package has been utilized for the development, providing a robust framework for implementing these algorithms.
